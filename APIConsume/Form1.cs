@@ -63,5 +63,11 @@ namespace APIConsume
                 }
             }
         }
+
+        private void Btn_PostProduct_Click(object sender, EventArgs e)
+        {
+            Frm_Post form = new Frm_Post();
+            form.ShowDialog();
+        }
     }
 }
