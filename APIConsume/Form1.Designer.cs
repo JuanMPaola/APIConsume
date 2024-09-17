@@ -53,6 +53,7 @@
             this.ProductsGrid.Name = "ProductsGrid";
             this.ProductsGrid.Size = new System.Drawing.Size(539, 429);
             this.ProductsGrid.TabIndex = 1;
+            this.ProductsGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductsGrid_CellContentClick);
             // 
             // Tbx_Id
             // 
@@ -95,7 +96,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.Click += new System.EventHandler(this.button1_aClick);
+            this.Click += new System.EventHandler(this.Form1_Click);
             ((System.ComponentModel.ISupportInitialize)(this.ProductsGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

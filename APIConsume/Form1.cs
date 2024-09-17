@@ -1,4 +1,5 @@
 ﻿using Business;
+using Business.Business;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,11 +10,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace APIConsume
 {
     public partial class Form1 : Form
     {
-        private string url = "https://fakestoreapi.com";
+        API api = new API();
         public Form1()
         {
             InitializeComponent();
@@ -26,19 +28,15 @@ namespace APIConsume
 
         private void button1_Click(object sender, EventArgs e)
         {
-            List<Product> list = Product.GetAll(url);
+            
+            List<Product> list = api.GetAll();
             ProductsGrid.DataSource = list;
         }
 
         private void Btn_GetFromAPI(object sender, EventArgs e)
         {            
-            List<Product> list = Product.GetAll(url);
+            List<Product> list = api.GetAll();
             ProductsGrid.DataSource = list;
-        }
-
-        private void button1_aClick(object sender, EventArgs e)
-        {
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -50,7 +48,7 @@ namespace APIConsume
         {
             if (int.TryParse(Tbx_Id.Text, out int productId))
             {
-                Product prod = Product.GetById(url, productId);
+                Product prod = api.GetById(productId);
 
                 if(prod != null)
                 {
@@ -68,6 +66,16 @@ namespace APIConsume
         {
             Frm_Post form = new Frm_Post();
             form.ShowDialog();
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProductsGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

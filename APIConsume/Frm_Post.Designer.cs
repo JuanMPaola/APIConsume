@@ -28,70 +28,127 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Btn_Add = new System.Windows.Forms.Button();
+            this.TxtBox_Id = new System.Windows.Forms.TextBox();
+            this.TxtBox_Title = new System.Windows.Forms.TextBox();
+            this.TxtBox_Price = new System.Windows.Forms.TextBox();
+            this.TxtBox_Description = new System.Windows.Forms.TextBox();
+            this.TxtBox_Category = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // Btn_Add
             // 
-            this.button1.Location = new System.Drawing.Point(78, 239);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Btn_Add.Location = new System.Drawing.Point(90, 239);
+            this.Btn_Add.Name = "Btn_Add";
+            this.Btn_Add.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Add.TabIndex = 0;
+            this.Btn_Add.Text = "Add";
+            this.Btn_Add.UseVisualStyleBackColor = true;
+            this.Btn_Add.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // TxtBox_Id
             // 
-            this.textBox1.Location = new System.Drawing.Point(69, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.TxtBox_Id.Location = new System.Drawing.Point(78, 21);
+            this.TxtBox_Id.Name = "TxtBox_Id";
+            this.TxtBox_Id.Size = new System.Drawing.Size(100, 20);
+            this.TxtBox_Id.TabIndex = 1;
+            this.TxtBox_Id.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // TxtBox_Title
             // 
-            this.textBox2.Location = new System.Drawing.Point(69, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
+            this.TxtBox_Title.Location = new System.Drawing.Point(78, 62);
+            this.TxtBox_Title.Name = "TxtBox_Title";
+            this.TxtBox_Title.Size = new System.Drawing.Size(100, 20);
+            this.TxtBox_Title.TabIndex = 2;
             // 
-            // textBox3
+            // TxtBox_Price
             // 
-            this.textBox3.Location = new System.Drawing.Point(69, 110);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 3;
+            this.TxtBox_Price.Location = new System.Drawing.Point(78, 110);
+            this.TxtBox_Price.Name = "TxtBox_Price";
+            this.TxtBox_Price.Size = new System.Drawing.Size(100, 20);
+            this.TxtBox_Price.TabIndex = 3;
             // 
-            // textBox4
+            // TxtBox_Description
             // 
-            this.textBox4.Location = new System.Drawing.Point(69, 198);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 4;
+            this.TxtBox_Description.Location = new System.Drawing.Point(78, 198);
+            this.TxtBox_Description.Name = "TxtBox_Description";
+            this.TxtBox_Description.Size = new System.Drawing.Size(100, 20);
+            this.TxtBox_Description.TabIndex = 4;
             // 
-            // textBox5
+            // TxtBox_Category
             // 
-            this.textBox5.Location = new System.Drawing.Point(69, 153);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 5;
+            this.TxtBox_Category.Location = new System.Drawing.Point(78, 153);
+            this.TxtBox_Category.Name = "TxtBox_Category";
+            this.TxtBox_Category.Size = new System.Drawing.Size(100, 20);
+            this.TxtBox_Category.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(49, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(16, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Id";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(38, 65);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(27, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Title";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(34, 117);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Price";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 153);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Category";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 201);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Description";
             // 
             // Frm_Post
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(246, 274);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TxtBox_Category);
+            this.Controls.Add(this.TxtBox_Description);
+            this.Controls.Add(this.TxtBox_Price);
+            this.Controls.Add(this.TxtBox_Title);
+            this.Controls.Add(this.TxtBox_Id);
+            this.Controls.Add(this.Btn_Add);
             this.Name = "Frm_Post";
             this.Text = "Frm_Post";
             this.ResumeLayout(false);
@@ -101,11 +158,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button Btn_Add;
+        private System.Windows.Forms.TextBox TxtBox_Id;
+        private System.Windows.Forms.TextBox TxtBox_Title;
+        private System.Windows.Forms.TextBox TxtBox_Price;
+        private System.Windows.Forms.TextBox TxtBox_Description;
+        private System.Windows.Forms.TextBox TxtBox_Category;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -35,3 +35,40 @@ D:\SISTEMAS\Visual Studio Proyectos\APIConsume\APIConsume\obj\Debug\View.csproj.
 D:\SISTEMAS\Visual Studio Proyectos\APIConsume\APIConsume\obj\Debug\APIConsume.exe
 D:\SISTEMAS\Visual Studio Proyectos\APIConsume\APIConsume\obj\Debug\APIConsume.pdb
 D:\SISTEMAS\Visual Studio Proyectos\APIConsume\APIConsume\obj\Debug\APIConsume.Frm_Post.resources
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\APIConsume.exe.config
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\APIConsume.exe
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\APIConsume.pdb
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\Business.dll
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\RestSharp.dll
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Text.Json.dll
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Memory.dll
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.ValueTuple.dll
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Buffers.dll
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\Business.pdb
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\Business.dll.config
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\RestSharp.xml
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Text.Json.xml
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Memory.xml
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.ValueTuple.xml
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Buffers.xml
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\View.csproj.AssemblyReference.cache
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\APIConsume.exe.config
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\APIConsume.Form1.resources
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\APIConsume.Frm_Post.resources
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\APIConsume.Properties.Resources.resources
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\View.csproj.GenerateResource.cache
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\View.csproj.CoreCompileInputs.cache
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\View.csproj.CopyComplete
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\APIConsume.exe
+C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\APIConsume.pdb
