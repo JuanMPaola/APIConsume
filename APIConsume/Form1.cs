@@ -1,5 +1,6 @@
 ﻿using Business;
 using Business.Business;
+using Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +16,7 @@ namespace APIConsume
 {
     public partial class Form1 : Form
     {
-        API api = new API();
+        APIConnection api;
         public Form1()
         {
             InitializeComponent();
