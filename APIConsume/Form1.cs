@@ -1,6 +1,4 @@
 ﻿using Business;
-using Business.Business;
-using Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +14,7 @@ namespace APIConsume
 {
     public partial class Form1 : Form
     {
-        APIConnection api;
+        APIConnection api = new APIConnection();
         public Form1()
         {
             InitializeComponent();
@@ -77,6 +75,28 @@ namespace APIConsume
         private void ProductsGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void GetWithLimit_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(textBox_Limit.Text, out int limit))
+            {
+                List<Product> lista = api.LimitResults(limit);
+                ProductsGrid.DataSource = lista;
+            }
+        }
+
+        private void btn_order_Click(object sender, EventArgs e)
+        {
+            if (btn_order.Text == "Ascendent")
+            {
+                api.SortResults("asc");
+                btn_order.Text = "Descendent";
+            }else 
+            {
+                api.SortResults("desc");
+                btn_order.Text = "Ascendent";
+            }
         }
     }
 }

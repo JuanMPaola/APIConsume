@@ -33,6 +33,9 @@
             this.Tbx_Id = new System.Windows.Forms.TextBox();
             this.Btn_GetById = new System.Windows.Forms.Button();
             this.Btn_PostProduct = new System.Windows.Forms.Button();
+            this.GetWithLimit = new System.Windows.Forms.Button();
+            this.textBox_Limit = new System.Windows.Forms.TextBox();
+            this.btn_order = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,11 +86,41 @@
             this.Btn_PostProduct.UseVisualStyleBackColor = true;
             this.Btn_PostProduct.Click += new System.EventHandler(this.Btn_PostProduct_Click);
             // 
+            // GetWithLimit
+            // 
+            this.GetWithLimit.Location = new System.Drawing.Point(300, 11);
+            this.GetWithLimit.Name = "GetWithLimit";
+            this.GetWithLimit.Size = new System.Drawing.Size(78, 21);
+            this.GetWithLimit.TabIndex = 5;
+            this.GetWithLimit.Text = "Get with Limit";
+            this.GetWithLimit.UseVisualStyleBackColor = true;
+            this.GetWithLimit.Click += new System.EventHandler(this.GetWithLimit_Click);
+            // 
+            // textBox_Limit
+            // 
+            this.textBox_Limit.Location = new System.Drawing.Point(385, 11);
+            this.textBox_Limit.Name = "textBox_Limit";
+            this.textBox_Limit.Size = new System.Drawing.Size(19, 20);
+            this.textBox_Limit.TabIndex = 6;
+            // 
+            // btn_order
+            // 
+            this.btn_order.Location = new System.Drawing.Point(427, 10);
+            this.btn_order.Name = "btn_order";
+            this.btn_order.Size = new System.Drawing.Size(75, 23);
+            this.btn_order.TabIndex = 7;
+            this.btn_order.Text = "Ascendent";
+            this.btn_order.UseVisualStyleBackColor = true;
+            this.btn_order.Click += new System.EventHandler(this.btn_order_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(574, 489);
+            this.Controls.Add(this.btn_order);
+            this.Controls.Add(this.textBox_Limit);
+            this.Controls.Add(this.GetWithLimit);
             this.Controls.Add(this.Btn_PostProduct);
             this.Controls.Add(this.Btn_GetById);
             this.Controls.Add(this.Tbx_Id);
@@ -110,6 +143,9 @@
         private System.Windows.Forms.TextBox Tbx_Id;
         private System.Windows.Forms.Button Btn_GetById;
         private System.Windows.Forms.Button Btn_PostProduct;
+        private System.Windows.Forms.Button GetWithLimit;
+        private System.Windows.Forms.TextBox textBox_Limit;
+        private System.Windows.Forms.Button btn_order;
     }
 }
 
