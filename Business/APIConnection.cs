@@ -41,13 +41,17 @@ namespace Business
             List<Product> orderList = _client.Get<List<Product>>(request);
             return orderList;
         }
-        public string[] GetAllCategories()
+        public List<string> GetAllCategories()
         {
-            return new string[1];
+            var request = new RestRequest($"products/categories");
+            List<string> categories = _client.Get<List<string>>(request);
+            return categories;
         }
-        public string GetInCategory()
+        public List<Product> GetInCategory(List<Product> apiProducts, string selectedCategory)
         {
-            return "";
+            //var request = new RestRequest($"products/category/${selectedCategory}");
+            //List<Product> categoryProducts = _client.Get<List<Product>>(request);
+            return apiProducts.Where(p => p.Category == selectedCategory).ToList();
         }
         public Product PostProudct(Product product)
         {

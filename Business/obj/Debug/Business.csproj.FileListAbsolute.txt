@@ -82,3 +82,31 @@ C:\Users\LN\Desktop\nueva\APIConsume\Business\obj\Debug\Business.csproj.CoreComp
 C:\Users\LN\Desktop\nueva\APIConsume\Business\obj\Debug\Business.csproj.CopyComplete
 C:\Users\LN\Desktop\nueva\APIConsume\Business\obj\Debug\Business.dll
 C:\Users\LN\Desktop\nueva\APIConsume\Business\obj\Debug\Business.pdb
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\Business.dll.config
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\Business.dll
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\Business.pdb
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\RestSharp.dll
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Buffers.dll
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Memory.dll
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Numerics.Vectors.dll
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Text.Encodings.Web.dll
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Text.Json.dll
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.ValueTuple.dll
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\RestSharp.xml
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Buffers.xml
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Memory.xml
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Numerics.Vectors.xml
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Text.Encodings.Web.xml
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Text.Json.xml
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\bin\Debug\System.ValueTuple.xml
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\obj\Debug\Business.csproj.AssemblyReference.cache
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\obj\Debug\Business.csproj.CopyComplete
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\obj\Debug\Business.dll
+D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\Business\obj\Debug\Business.pdb

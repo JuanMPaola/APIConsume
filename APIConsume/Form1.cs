@@ -15,27 +15,25 @@ namespace APIConsume
     public partial class Form1 : Form
     {
         APIConnection api = new APIConnection();
+        List<string> categories = new List<string>();
+        List<Product> filtered = new List<Product>();
+        List<Product> apiProducts = new List<Product>();
+
         public Form1()
         {
             InitializeComponent();
+
+            categories = api.GetAllCategories();
+            categories.Insert(0, "All");
+            comboBox_categories.DataSource = categories;
+
+            apiProducts = api.GetAll();
+            ProductsGrid.DataSource = apiProducts;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-            List<Product> list = api.GetAll();
-            ProductsGrid.DataSource = list;
-        }
-
-        private void Btn_GetFromAPI(object sender, EventArgs e)
-        {            
-            List<Product> list = api.GetAll();
-            ProductsGrid.DataSource = list;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -96,6 +94,21 @@ namespace APIConsume
             {
                 api.SortResults("desc");
                 btn_order.Text = "Ascendent";
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedCategory = comboBox_categories.SelectedItem.ToString();
+
+            if (selectedCategory == "All")
+            {
+                ProductsGrid.DataSource = apiProducts;
+            }
+            else
+            {
+                filtered = api.GetInCategory(apiProducts, selectedCategory);
+                ProductsGrid.DataSource = filtered;
             }
         }
     }
