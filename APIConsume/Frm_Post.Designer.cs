@@ -39,13 +39,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.Btn_Cancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn_Add
             // 
-            this.Btn_Add.Location = new System.Drawing.Point(90, 239);
+            this.Btn_Add.Location = new System.Drawing.Point(78, 239);
             this.Btn_Add.Name = "Btn_Add";
-            this.Btn_Add.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Add.Size = new System.Drawing.Size(55, 23);
             this.Btn_Add.TabIndex = 0;
             this.Btn_Add.Text = "Add";
             this.Btn_Add.UseVisualStyleBackColor = true;
@@ -55,36 +56,35 @@
             // 
             this.TxtBox_Id.Location = new System.Drawing.Point(78, 21);
             this.TxtBox_Id.Name = "TxtBox_Id";
-            this.TxtBox_Id.Size = new System.Drawing.Size(100, 20);
+            this.TxtBox_Id.Size = new System.Drawing.Size(113, 20);
             this.TxtBox_Id.TabIndex = 1;
-            this.TxtBox_Id.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // TxtBox_Title
             // 
             this.TxtBox_Title.Location = new System.Drawing.Point(78, 62);
             this.TxtBox_Title.Name = "TxtBox_Title";
-            this.TxtBox_Title.Size = new System.Drawing.Size(100, 20);
+            this.TxtBox_Title.Size = new System.Drawing.Size(113, 20);
             this.TxtBox_Title.TabIndex = 2;
             // 
             // TxtBox_Price
             // 
             this.TxtBox_Price.Location = new System.Drawing.Point(78, 110);
             this.TxtBox_Price.Name = "TxtBox_Price";
-            this.TxtBox_Price.Size = new System.Drawing.Size(100, 20);
+            this.TxtBox_Price.Size = new System.Drawing.Size(113, 20);
             this.TxtBox_Price.TabIndex = 3;
             // 
             // TxtBox_Description
             // 
             this.TxtBox_Description.Location = new System.Drawing.Point(78, 198);
             this.TxtBox_Description.Name = "TxtBox_Description";
-            this.TxtBox_Description.Size = new System.Drawing.Size(100, 20);
+            this.TxtBox_Description.Size = new System.Drawing.Size(113, 20);
             this.TxtBox_Description.TabIndex = 4;
             // 
             // TxtBox_Category
             // 
             this.TxtBox_Category.Location = new System.Drawing.Point(78, 153);
             this.TxtBox_Category.Name = "TxtBox_Category";
-            this.TxtBox_Category.Size = new System.Drawing.Size(100, 20);
+            this.TxtBox_Category.Size = new System.Drawing.Size(113, 20);
             this.TxtBox_Category.TabIndex = 5;
             // 
             // label1
@@ -95,7 +95,6 @@
             this.label1.Size = new System.Drawing.Size(16, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Id";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -133,11 +132,22 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Description";
             // 
+            // Btn_Cancel
+            // 
+            this.Btn_Cancel.Location = new System.Drawing.Point(139, 239);
+            this.Btn_Cancel.Name = "Btn_Cancel";
+            this.Btn_Cancel.Size = new System.Drawing.Size(52, 23);
+            this.Btn_Cancel.TabIndex = 11;
+            this.Btn_Cancel.Text = "Cancel";
+            this.Btn_Cancel.UseVisualStyleBackColor = true;
+            this.Btn_Cancel.Click += new System.EventHandler(this.Btn_Cancel_Click);
+            // 
             // Frm_Post
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(246, 274);
+            this.Controls.Add(this.Btn_Cancel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -169,5 +179,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button Btn_Cancel;
     }
 }

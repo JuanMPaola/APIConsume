@@ -13,6 +13,7 @@ namespace Business
         RestClient _client;
         public APIConnection()
         {
+            //string url = WebConfigurationManager.AppSettings["urlApi"];
             string url = "https://fakestoreapi.com";
             _client = new RestClient(url);
         }
@@ -56,6 +57,7 @@ namespace Business
         public Product PostProudct(Product product)
         {
             var request = new RestRequest("products", Method.Post);
+            request.AddJsonBody(product);
             return _client.Post<Product>(request);
         }
         public Product PutProduct()

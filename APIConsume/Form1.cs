@@ -23,22 +23,13 @@ namespace APIConsume
         {
             InitializeComponent();
 
+
             categories = api.GetAllCategories();
             categories.Insert(0, "All");
-            comboBox_categories.DataSource = categories;
+            comboBox1.DataSource = categories;
 
             apiProducts = api.GetAll();
             ProductsGrid.DataSource = apiProducts;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void Btn_GetById_Click(object sender, EventArgs e)
@@ -47,7 +38,7 @@ namespace APIConsume
             {
                 Product prod = api.GetById(productId);
 
-                if(prod != null)
+                if (prod != null)
                 {
                     List<Product> productos = new List<Product> { prod };
                     ProductsGrid.DataSource = productos;
@@ -62,17 +53,17 @@ namespace APIConsume
         private void Btn_PostProduct_Click(object sender, EventArgs e)
         {
             Frm_Post form = new Frm_Post();
-            form.ShowDialog();
-        }
 
-        private void Form1_Click(object sender, EventArgs e)
-        {
 
-        }
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                Product newProduct = form.NewProduct;
 
-        private void ProductsGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+                apiProducts.Add(newProduct);
 
+                ProductsGrid.DataSource = null;
+                ProductsGrid.DataSource = apiProducts;
+            }
         }
 
         private void GetWithLimit_Click(object sender, EventArgs e)
@@ -86,20 +77,21 @@ namespace APIConsume
 
         private void btn_order_Click(object sender, EventArgs e)
         {
-            if (btn_order.Text == "Ascendent")
+            if (btn_order.Text == "Descendent")
             {
-                api.SortResults("asc");
-                btn_order.Text = "Descendent";
-            }else 
-            {
-                api.SortResults("desc");
+                ProductsGrid.DataSource = api.SortResults("desc");
                 btn_order.Text = "Ascendent";
+            }
+            else
+            {
+                ProductsGrid.DataSource = api.SortResults("asc");
+                btn_order.Text = "Descendent";
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            string selectedCategory = comboBox_categories.SelectedItem.ToString();
+            string selectedCategory = comboBox1.SelectedItem.ToString();
 
             if (selectedCategory == "All")
             {

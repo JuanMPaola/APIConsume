@@ -13,32 +13,34 @@ namespace APIConsume
 {
     public partial class Frm_Post : Form
     {
+        public Product NewProduct { get; private set; }
+
         public Frm_Post()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Product prod = new Product();
+            Product prod = new Product
+            {
+                Id = Convert.ToInt32(TxtBox_Id.Text),
+                Title = TxtBox_Title.Text,
+                Price = Convert.ToInt32(TxtBox_Price.Text),
+                Category = TxtBox_Category.Text,
+                Description = TxtBox_Description.Text
+            };
 
-            prod.Id = Convert.ToInt32(TxtBox_Id.Text);
-            prod.Title = TxtBox_Title.Text;
-            prod.Price = Convert.ToInt32(TxtBox_Price.Text);
-            prod.Category = TxtBox_Category.Text;
-            prod.Description = TxtBox_Description.Text;
+            NewProduct = prod;
 
-            
+            this.DialogResult = DialogResult.OK;
+
+            this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Btn_Cancel_Click(object sender, EventArgs e)
         {
-
+            this.Dispose();
         }
     }
 }
