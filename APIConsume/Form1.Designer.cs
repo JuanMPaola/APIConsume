@@ -60,8 +60,29 @@
             this.ProductsGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ProductsGrid.Location = new System.Drawing.Point(30, 51);
             this.ProductsGrid.Name = "ProductsGrid";
-            this.ProductsGrid.Size = new System.Drawing.Size(658, 398);
+            this.ProductsGrid.Size = new System.Drawing.Size(658, 423);
             this.ProductsGrid.TabIndex = 1;
+            // 
+            // Tbx_Id
+            // 
+            this.Tbx_Id.Location = new System.Drawing.Point(0, 0);
+            this.Tbx_Id.Name = "Tbx_Id";
+            this.Tbx_Id.Size = new System.Drawing.Size(100, 20);
+            this.Tbx_Id.TabIndex = 12;
+            // 
+            // Btn_GetById
+            // 
+            this.Btn_GetById.Location = new System.Drawing.Point(0, 0);
+            this.Btn_GetById.Name = "Btn_GetById";
+            this.Btn_GetById.Size = new System.Drawing.Size(75, 23);
+            this.Btn_GetById.TabIndex = 13;
+            // 
+            // Btn_PostProduct
+            // 
+            this.Btn_PostProduct.Location = new System.Drawing.Point(0, 0);
+            this.Btn_PostProduct.Name = "Btn_PostProduct";
+            this.Btn_PostProduct.Size = new System.Drawing.Size(75, 23);
+            this.Btn_PostProduct.TabIndex = 15;
             // 
             // GetWithLimit
             // 
@@ -76,6 +97,13 @@
             this.textBox_Limit.Name = "textBox_Limit";
             this.textBox_Limit.Size = new System.Drawing.Size(30, 20);
             this.textBox_Limit.TabIndex = 6;
+            // 
+            // btn_order
+            // 
+            this.btn_order.Location = new System.Drawing.Point(0, 0);
+            this.btn_order.Name = "btn_order";
+            this.btn_order.Size = new System.Drawing.Size(75, 23);
+            this.btn_order.TabIndex = 14;
             // 
             // comboBox_categories
             // 
@@ -184,7 +212,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 51);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(30, 438);
+            this.panel3.Size = new System.Drawing.Size(30, 463);
             this.panel3.TabIndex = 11;
             // 
             // panel7
@@ -192,13 +220,13 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel7.Location = new System.Drawing.Point(688, 51);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(30, 438);
+            this.panel7.Size = new System.Drawing.Size(30, 463);
             this.panel7.TabIndex = 12;
             // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(30, 449);
+            this.panel4.Location = new System.Drawing.Point(30, 474);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(658, 40);
             this.panel4.TabIndex = 0;
@@ -207,7 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 489);
+            this.ClientSize = new System.Drawing.Size(718, 514);
             this.Controls.Add(this.ProductsGrid);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel7);

@@ -1,6 +1,7 @@
 ﻿using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
@@ -13,8 +14,8 @@ namespace Business
         RestClient _client;
         public APIConnection()
         {
-            //string url = WebConfigurationManager.AppSettings["urlApi"];
-            string url = "https://fakestoreapi.com";
+            string url = ConfigurationManager.AppSettings["urlApi"];
+            //string url = "https://fakestoreapi.com";
             _client = new RestClient(url);
         }
 
