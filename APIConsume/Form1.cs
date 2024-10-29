@@ -32,49 +32,6 @@ namespace APIConsume
             ProductsGrid.DataSource = apiProducts;
         }
 
-        private void Btn_GetById_Click(object sender, EventArgs e)
-        {
-            if (int.TryParse(Tbx_Id.Text, out int productId))
-            {
-                Product prod = api.GetById(productId);
-
-                if (prod != null)
-                {
-                    List<Product> productos = new List<Product> { prod };
-                    ProductsGrid.DataSource = productos;
-                }
-                else
-                {
-                    MessageBox.Show("Product not found");
-                }
-            }
-        }
-
-        private void Btn_PostProduct_Click(object sender, EventArgs e)
-        {
-            Frm_Post form = new Frm_Post();
-
-
-            if (form.ShowDialog() == DialogResult.OK)
-            {
-                Product newProduct = form.NewProduct;
-
-                apiProducts.Add(newProduct);
-
-                ProductsGrid.DataSource = null;
-                ProductsGrid.DataSource = apiProducts;
-            }
-        }
-
-        private void GetWithLimit_Click(object sender, EventArgs e)
-        {
-            if (int.TryParse(textBox_Limit.Text, out int limit))
-            {
-                List<Product> lista = api.LimitResults(limit);
-                ProductsGrid.DataSource = lista;
-            }
-        }
-
         private void btn_order_Click(object sender, EventArgs e)
         {
             if (btn_order.Text == "Descendent")
@@ -101,6 +58,63 @@ namespace APIConsume
             {
                 filtered = api.GetInCategory(apiProducts, selectedCategory);
                 ProductsGrid.DataSource = filtered;
+            }
+        }
+
+        private void btnGetById_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(textBoxId.Text, out int productId))
+            {
+                Product prod = api.GetById(productId);
+
+                if (prod != null)
+                {
+                    List<Product> productos = new List<Product> { prod };
+                    ProductsGrid.DataSource = productos;
+                }
+                else
+                {
+                    MessageBox.Show("Product not found");
+                }
+            }
+        }
+
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            Frm_Post form = new Frm_Post();
+
+
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                Product newProduct = form.NewProduct;
+
+                apiProducts.Add(newProduct);
+
+                ProductsGrid.DataSource = null;
+                ProductsGrid.DataSource = apiProducts;
+            }
+        }
+
+        private void btnLimit_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(textBoxLimit.Text, out int limit))
+            {
+                List<Product> lista = api.LimitResults(limit);
+                ProductsGrid.DataSource = lista;
+            }
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            if (btnOrder.Text == "Descendent")
+            {
+                ProductsGrid.DataSource = api.SortResults("desc");
+                btnOrder.Text = "Ascendent";
+            }
+            else
+            {
+                ProductsGrid.DataSource = api.SortResults("asc");
+                btnOrder.Text = "Descendent";
             }
         }
     }

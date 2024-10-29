@@ -63,7 +63,6 @@ C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Numeric
 C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\bin\Debug\System.Buffers.xml
 C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\View.csproj.AssemblyReference.cache
 C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
-C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\APIConsume.exe.config
 C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\APIConsume.Form1.resources
 C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\APIConsume.Frm_Post.resources
 C:\Users\LN\Desktop\Nueva carpeta\APIConsume\APIConsume\obj\Debug\APIConsume.Properties.Resources.resources

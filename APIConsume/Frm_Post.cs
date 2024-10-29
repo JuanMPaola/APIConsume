@@ -38,7 +38,7 @@ namespace APIConsume
             this.Close();
         }
 
-        private void Btn_Cancel_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }

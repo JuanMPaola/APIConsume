@@ -39,7 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.Btn_Cancel = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn_Add
@@ -132,22 +132,21 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Description";
             // 
-            // Btn_Cancel
+            // btnCancel
             // 
-            this.Btn_Cancel.Location = new System.Drawing.Point(139, 239);
-            this.Btn_Cancel.Name = "Btn_Cancel";
-            this.Btn_Cancel.Size = new System.Drawing.Size(52, 23);
-            this.Btn_Cancel.TabIndex = 11;
-            this.Btn_Cancel.Text = "Cancel";
-            this.Btn_Cancel.UseVisualStyleBackColor = true;
-            this.Btn_Cancel.Click += new System.EventHandler(this.Btn_Cancel_Click);
+            this.btnCancel.Location = new System.Drawing.Point(139, 239);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(52, 23);
+            this.btnCancel.TabIndex = 0;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // Frm_Post
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(246, 274);
-            this.Controls.Add(this.Btn_Cancel);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -179,6 +178,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button Btn_Cancel;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

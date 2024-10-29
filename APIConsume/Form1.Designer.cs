@@ -38,16 +38,16 @@
             this.comboBox_categories = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBoxId = new System.Windows.Forms.TextBox();
+            this.btnGetById = new System.Windows.Forms.Button();
+            this.btnOrder = new System.Windows.Forms.Button();
+            this.btnPost = new System.Windows.Forms.Button();
+            this.textBoxLimit = new System.Windows.Forms.TextBox();
+            this.btnLimit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsGrid)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -63,42 +63,12 @@
             this.ProductsGrid.Size = new System.Drawing.Size(658, 398);
             this.ProductsGrid.TabIndex = 1;
             // 
-            // Tbx_Id
-            // 
-            this.Tbx_Id.Location = new System.Drawing.Point(216, 15);
-            this.Tbx_Id.Name = "Tbx_Id";
-            this.Tbx_Id.Size = new System.Drawing.Size(28, 20);
-            this.Tbx_Id.TabIndex = 2;
-            // 
-            // Btn_GetById
-            // 
-            this.Btn_GetById.Location = new System.Drawing.Point(129, 14);
-            this.Btn_GetById.Name = "Btn_GetById";
-            this.Btn_GetById.Size = new System.Drawing.Size(81, 20);
-            this.Btn_GetById.TabIndex = 3;
-            this.Btn_GetById.Text = "Get by Id";
-            this.Btn_GetById.UseVisualStyleBackColor = true;
-            this.Btn_GetById.Click += new System.EventHandler(this.Btn_GetById_Click);
-            // 
-            // Btn_PostProduct
-            // 
-            this.Btn_PostProduct.Location = new System.Drawing.Point(250, 14);
-            this.Btn_PostProduct.Name = "Btn_PostProduct";
-            this.Btn_PostProduct.Size = new System.Drawing.Size(80, 20);
-            this.Btn_PostProduct.TabIndex = 4;
-            this.Btn_PostProduct.Text = "Post Product";
-            this.Btn_PostProduct.UseVisualStyleBackColor = true;
-            this.Btn_PostProduct.Click += new System.EventHandler(this.Btn_PostProduct_Click);
-            // 
             // GetWithLimit
             // 
-            this.GetWithLimit.Location = new System.Drawing.Point(336, 13);
+            this.GetWithLimit.Location = new System.Drawing.Point(0, 0);
             this.GetWithLimit.Name = "GetWithLimit";
-            this.GetWithLimit.Size = new System.Drawing.Size(78, 21);
-            this.GetWithLimit.TabIndex = 5;
-            this.GetWithLimit.Text = "Get with Limit";
-            this.GetWithLimit.UseVisualStyleBackColor = true;
-            this.GetWithLimit.Click += new System.EventHandler(this.GetWithLimit_Click);
+            this.GetWithLimit.Size = new System.Drawing.Size(75, 23);
+            this.GetWithLimit.TabIndex = 14;
             // 
             // textBox_Limit
             // 
@@ -106,16 +76,6 @@
             this.textBox_Limit.Name = "textBox_Limit";
             this.textBox_Limit.Size = new System.Drawing.Size(30, 20);
             this.textBox_Limit.TabIndex = 6;
-            // 
-            // btn_order
-            // 
-            this.btn_order.Location = new System.Drawing.Point(457, 12);
-            this.btn_order.Name = "btn_order";
-            this.btn_order.Size = new System.Drawing.Size(75, 23);
-            this.btn_order.TabIndex = 7;
-            this.btn_order.Text = "Descendent\r\n";
-            this.btn_order.UseVisualStyleBackColor = true;
-            this.btn_order.Click += new System.EventHandler(this.btn_order_Click);
             // 
             // comboBox_categories
             // 
@@ -144,67 +104,80 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.textBoxId);
+            this.panel2.Controls.Add(this.btnGetById);
+            this.panel2.Controls.Add(this.btnOrder);
+            this.panel2.Controls.Add(this.btnPost);
+            this.panel2.Controls.Add(this.textBoxLimit);
+            this.panel2.Controls.Add(this.btnLimit);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(718, 67);
             this.panel2.TabIndex = 11;
             // 
-            // textBox1
+            // comboBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(198, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(28, 20);
-            this.textBox1.TabIndex = 2;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(520, 13);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(83, 21);
+            this.comboBox1.TabIndex = 8;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
-            // button1
+            // textBoxId
             // 
-            this.button1.Location = new System.Drawing.Point(111, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 20);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Get by Id";
-            this.button1.UseVisualStyleBackColor = true;
+            this.textBoxId.Location = new System.Drawing.Point(198, 15);
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.Size = new System.Drawing.Size(28, 20);
+            this.textBoxId.TabIndex = 2;
             // 
-            // button2
+            // btnGetById
             // 
-            this.button2.Location = new System.Drawing.Point(439, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Descendent\r\n";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnGetById.Location = new System.Drawing.Point(111, 14);
+            this.btnGetById.Name = "btnGetById";
+            this.btnGetById.Size = new System.Drawing.Size(81, 20);
+            this.btnGetById.TabIndex = 3;
+            this.btnGetById.Text = "Get by Id";
+            this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
-            // button3
+            // btnOrder
             // 
-            this.button3.Location = new System.Drawing.Point(232, 14);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 20);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Post Product";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnOrder.Location = new System.Drawing.Point(439, 12);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(75, 23);
+            this.btnOrder.TabIndex = 7;
+            this.btnOrder.Text = "Descendent\r\n";
+            this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
-            // textBox2
+            // btnPost
             // 
-            this.textBox2.Location = new System.Drawing.Point(403, 13);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(30, 20);
-            this.textBox2.TabIndex = 6;
+            this.btnPost.Location = new System.Drawing.Point(232, 14);
+            this.btnPost.Name = "btnPost";
+            this.btnPost.Size = new System.Drawing.Size(80, 20);
+            this.btnPost.TabIndex = 4;
+            this.btnPost.Text = "Post Product";
+            this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
-            // button4
+            // textBoxLimit
             // 
-            this.button4.Location = new System.Drawing.Point(318, 13);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(78, 21);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Get with Limit";
-            this.button4.UseVisualStyleBackColor = true;
+            this.textBoxLimit.Location = new System.Drawing.Point(403, 13);
+            this.textBoxLimit.Name = "textBoxLimit";
+            this.textBoxLimit.Size = new System.Drawing.Size(30, 20);
+            this.textBoxLimit.TabIndex = 6;
+            // 
+            // btnLimit
+            // 
+            this.btnLimit.Location = new System.Drawing.Point(318, 13);
+            this.btnLimit.Name = "btnLimit";
+            this.btnLimit.Size = new System.Drawing.Size(78, 21);
+            this.btnLimit.TabIndex = 5;
+            this.btnLimit.Text = "Get with Limit";
+            this.btnLimit.UseVisualStyleBackColor = true;
+            this.btnLimit.Click += new System.EventHandler(this.btnLimit_Click);
             // 
             // panel3
             // 
@@ -229,15 +202,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(658, 40);
             this.panel4.TabIndex = 0;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(520, 13);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(83, 21);
-            this.comboBox1.TabIndex = 8;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
             // Form1
             // 
@@ -271,12 +235,12 @@
         private System.Windows.Forms.ComboBox comboBox_categories;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBoxId;
+        private System.Windows.Forms.Button btnGetById;
+        private System.Windows.Forms.Button btnOrder;
+        private System.Windows.Forms.Button btnPost;
+        private System.Windows.Forms.TextBox textBoxLimit;
+        private System.Windows.Forms.Button btnLimit;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel4;
