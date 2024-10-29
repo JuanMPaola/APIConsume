@@ -25,25 +25,11 @@ namespace APIConsume
 
 
             categories = api.GetAllCategories();
-            categories.Insert(0, "All");
+            //categories.Insert(0, "All"); CAMBIAR ENDPOINT CATEGORIAS
             comboBox1.DataSource = categories;
 
             apiProducts = api.GetAll();
             ProductsGrid.DataSource = apiProducts;
-        }
-
-        private void btn_order_Click(object sender, EventArgs e)
-        {
-            if (btn_order.Text == "Descendent")
-            {
-                ProductsGrid.DataSource = api.SortResults("desc");
-                btn_order.Text = "Ascendent";
-            }
-            else
-            {
-                ProductsGrid.DataSource = api.SortResults("asc");
-                btn_order.Text = "Descendent";
-            }
         }
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)

@@ -21,25 +21,25 @@ namespace Business
 
         public List<Product> GetAll()
         {
-            var request = new RestRequest("products", Method.Get);
+            var request = new RestRequest("api/Product", Method.Get);
             List<Product> list = _client.Get<List<Product>>(request);
             return list;
         }
         public Product GetById(int id)
         {
-            var request = new RestRequest($"products/{id}", Method.Get);
+            var request = new RestRequest($"api/Product/{id}", Method.Get);
             Product product = _client.Get<Product>(request);
             return product;
         }
         public List<Product> LimitResults(int limit)
         {
-            var request = new RestRequest($"products?limit={limit}");
+            var request = new RestRequest($"api/Product?limit={limit}");
             List<Product> limitList = _client.Get<List<Product>>(request);
             return limitList;
         }
         public List<Product> SortResults(string order)
         {
-            var request = new RestRequest($"products?sort={order}");
+            var request = new RestRequest($"api/Product?sort={order}");
             List<Product> orderList = _client.Get<List<Product>>(request);
             return orderList;
         }
@@ -57,7 +57,7 @@ namespace Business
         }
         public Product PostProudct(Product product)
         {
-            var request = new RestRequest("products", Method.Post);
+            var request = new RestRequest("api/Product", Method.Post);
             request.AddJsonBody(product);
             return _client.Post<Product>(request);
         }
