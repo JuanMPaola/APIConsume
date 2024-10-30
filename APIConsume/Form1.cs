@@ -103,5 +103,24 @@ namespace APIConsume
                 btnOrder.Text = "Descendent";
             }
         }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(textBoxDelete.Text, out int productId))
+            {
+                Product prod = api.DeleteProduct(productId);
+
+
+                if (prod != null)
+                {
+                    List<Product> productos = new List<Product> { prod };
+                    ProductsGrid.DataSource = productos;
+                }
+                else
+                {
+                    MessageBox.Show("Product not found");
+                }
+            }
+        }
     }
 }

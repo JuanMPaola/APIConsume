@@ -5,6 +5,7 @@ using System.Configuration;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Business
@@ -50,8 +51,8 @@ namespace Business
         }
         public List<Product> GetInCategory(List<Product> apiProducts, string selectedCategory)
         {
-            //var request = new RestRequest($"products/category/${selectedCategory}");
-            //List<Product> categoryProducts = _client.Get<List<Product>>(request);
+            var request = new RestRequest($"products/category/${selectedCategory}");
+            List<Product> categoryProducts = _client.Get<List<Product>>(request);
             return apiProducts.Where(p => p.Category == selectedCategory).ToList();
         }
         public Product PostProudct(Product product)
@@ -64,13 +65,12 @@ namespace Business
         {
             return new Product();
         }
-        public Product DeleteProduct() 
+        public Product DeleteProduct(int id)
         {
-            return new Product();
+            var request = new RestRequest($"api/Product/{id}", Method.Delete);
+            var response = _client.Execute(request);
+            return JsonSerializer.Deserialize<Product>(response.Content);
         }
-
-
-
     }
 }
 

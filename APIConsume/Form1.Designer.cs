@@ -48,6 +48,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.BtnDelete = new System.Windows.Forms.Button();
+            this.textBoxDelete = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsGrid)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -131,6 +133,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.textBoxDelete);
+            this.panel2.Controls.Add(this.BtnDelete);
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.textBoxId);
             this.panel2.Controls.Add(this.btnGetById);
@@ -141,28 +145,28 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(718, 67);
+            this.panel2.Size = new System.Drawing.Size(718, 61);
             this.panel2.TabIndex = 11;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(520, 13);
+            this.comboBox1.Location = new System.Drawing.Point(490, 12);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(83, 21);
+            this.comboBox1.Size = new System.Drawing.Size(70, 21);
             this.comboBox1.TabIndex = 8;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(198, 15);
+            this.textBoxId.Location = new System.Drawing.Point(168, 14);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(28, 20);
             this.textBoxId.TabIndex = 2;
             // 
             // btnGetById
             // 
-            this.btnGetById.Location = new System.Drawing.Point(111, 14);
+            this.btnGetById.Location = new System.Drawing.Point(81, 13);
             this.btnGetById.Name = "btnGetById";
             this.btnGetById.Size = new System.Drawing.Size(81, 20);
             this.btnGetById.TabIndex = 3;
@@ -172,7 +176,7 @@
             // 
             // btnOrder
             // 
-            this.btnOrder.Location = new System.Drawing.Point(439, 12);
+            this.btnOrder.Location = new System.Drawing.Point(409, 11);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(75, 23);
             this.btnOrder.TabIndex = 7;
@@ -182,7 +186,7 @@
             // 
             // btnPost
             // 
-            this.btnPost.Location = new System.Drawing.Point(232, 14);
+            this.btnPost.Location = new System.Drawing.Point(202, 13);
             this.btnPost.Name = "btnPost";
             this.btnPost.Size = new System.Drawing.Size(80, 20);
             this.btnPost.TabIndex = 4;
@@ -192,14 +196,14 @@
             // 
             // textBoxLimit
             // 
-            this.textBoxLimit.Location = new System.Drawing.Point(403, 13);
+            this.textBoxLimit.Location = new System.Drawing.Point(373, 12);
             this.textBoxLimit.Name = "textBoxLimit";
             this.textBoxLimit.Size = new System.Drawing.Size(30, 20);
             this.textBoxLimit.TabIndex = 6;
             // 
             // btnLimit
             // 
-            this.btnLimit.Location = new System.Drawing.Point(318, 13);
+            this.btnLimit.Location = new System.Drawing.Point(288, 12);
             this.btnLimit.Name = "btnLimit";
             this.btnLimit.Size = new System.Drawing.Size(78, 21);
             this.btnLimit.TabIndex = 5;
@@ -230,6 +234,23 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(658, 40);
             this.panel4.TabIndex = 0;
+            // 
+            // BtnDelete
+            // 
+            this.BtnDelete.Location = new System.Drawing.Point(566, 10);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(52, 23);
+            this.BtnDelete.TabIndex = 9;
+            this.BtnDelete.Text = "Delete";
+            this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
+            // 
+            // textBoxDelete
+            // 
+            this.textBoxDelete.Location = new System.Drawing.Point(624, 12);
+            this.textBoxDelete.Name = "textBoxDelete";
+            this.textBoxDelete.Size = new System.Drawing.Size(45, 20);
+            this.textBoxDelete.TabIndex = 10;
             // 
             // Form1
             // 
@@ -273,6 +294,8 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBoxDelete;
+        private System.Windows.Forms.Button BtnDelete;
     }
 }
 
