@@ -31,6 +31,8 @@ namespace APIConsume
                 Description = TxtBox_Description.Text
             };
 
+            APIConnection api = new APIConnection();
+            api.PostProudct(prod);
             NewProduct = prod;
 
             this.DialogResult = DialogResult.OK;

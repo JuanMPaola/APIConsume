@@ -25,7 +25,7 @@ namespace APIConsume
 
 
             categories = api.GetAllCategories();
-            //categories.Insert(0, "All"); CAMBIAR ENDPOINT CATEGORIAS
+            categories.Insert(0, "All");
             comboBox1.DataSource = categories;
 
             apiProducts = api.GetAll();

@@ -15,7 +15,6 @@ namespace Business
         public APIConnection()
         {
             string url = ConfigurationManager.AppSettings["urlApi"];
-            //string url = "https://fakestoreapi.com";
             _client = new RestClient(url);
         }
 
@@ -45,7 +44,7 @@ namespace Business
         }
         public List<string> GetAllCategories()
         {
-            var request = new RestRequest($"products/categories");
+            var request = new RestRequest($"api/Product/Categories");
             List<string> categories = _client.Get<List<string>>(request);
             return categories;
         }
