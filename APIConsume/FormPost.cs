@@ -8,26 +8,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace APIConsume
 {
-    public partial class Frm_Post : Form
+    public partial class FormPost : Form
     {
         public Product NewProduct { get; private set; }
-
-        public Frm_Post()
+        public FormPost(List<string> categories)
         {
             InitializeComponent();
+            categories.RemoveAt(0);
+            comboBoxCategories.DataSource = categories;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Product prod = new Product
             {
-                Id = Convert.ToInt32(TxtBox_Id.Text),
                 Title = TxtBox_Title.Text,
                 Price = Convert.ToInt32(TxtBox_Price.Text),
-                Category = TxtBox_Category.Text,
+                Category = comboBoxCategories.Text,
                 Description = TxtBox_Description.Text
             };
 

@@ -143,3 +143,39 @@ D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\APIConsume\obj\Debug\View.c
 D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\APIConsume\obj\Debug\View.csproj.CopyComplete
 D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\APIConsume\obj\Debug\APIConsume.exe
 D:\PROYECTOS_VS\Proyecto Final Integrador\APIConsume\APIConsume\obj\Debug\APIConsume.pdb
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\APIConsume.exe.config
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\APIConsume.exe
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\APIConsume.pdb
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\Business.dll
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\RestSharp.dll
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Buffers.dll
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Memory.dll
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Numerics.Vectors.dll
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Text.Encodings.Web.dll
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Text.Json.dll
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.ValueTuple.dll
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\Business.pdb
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\Business.dll.config
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\RestSharp.xml
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Buffers.xml
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Memory.xml
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Numerics.Vectors.xml
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Text.Encodings.Web.xml
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Text.Json.xml
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\PROYECTOS_VS\APIConsume\APIConsume\bin\Debug\System.ValueTuple.xml
+D:\PROYECTOS_VS\APIConsume\APIConsume\obj\Debug\View.csproj.AssemblyReference.cache
+D:\PROYECTOS_VS\APIConsume\APIConsume\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
+D:\PROYECTOS_VS\APIConsume\APIConsume\obj\Debug\APIConsume.Properties.Resources.resources
+D:\PROYECTOS_VS\APIConsume\APIConsume\obj\Debug\View.csproj.GenerateResource.cache
+D:\PROYECTOS_VS\APIConsume\APIConsume\obj\Debug\View.csproj.CoreCompileInputs.cache
+D:\PROYECTOS_VS\APIConsume\APIConsume\obj\Debug\View.csproj.CopyComplete
+D:\PROYECTOS_VS\APIConsume\APIConsume\obj\Debug\APIConsume.exe
+D:\PROYECTOS_VS\APIConsume\APIConsume\obj\Debug\APIConsume.pdb
+D:\PROYECTOS_VS\APIConsume\APIConsume\obj\Debug\APIConsume.FormMain.resources
+D:\PROYECTOS_VS\APIConsume\APIConsume\obj\Debug\APIConsume.FormPost.resources

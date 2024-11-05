@@ -12,14 +12,14 @@ using System.Windows.Forms;
 
 namespace APIConsume
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
         APIConnection api = new APIConnection();
         List<string> categories = new List<string>();
         List<Product> filtered = new List<Product>();
         List<Product> apiProducts = new List<Product>();
 
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
 
@@ -67,7 +67,7 @@ namespace APIConsume
 
         private void btnPost_Click(object sender, EventArgs e)
         {
-            Frm_Post form = new Frm_Post();
+            FormPost form = new FormPost(categories);
 
 
             if (form.ShowDialog() == DialogResult.OK)
@@ -121,6 +121,10 @@ namespace APIConsume
                     MessageBox.Show("Product not found");
                 }
             }
+        }
+        private void btnGetAll_Click(object sender, EventArgs e)
+        {
+            ProductsGrid.DataSource = apiProducts;
         }
     }
 }

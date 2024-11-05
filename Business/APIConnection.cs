@@ -21,31 +21,31 @@ namespace Business
 
         public List<Product> GetAll()
         {
-            var request = new RestRequest("api/Product", Method.Get);
+            var request = new RestRequest("products", Method.Get);
             List<Product> list = _client.Get<List<Product>>(request);
             return list;
         }
         public Product GetById(int id)
         {
-            var request = new RestRequest($"api/Product/{id}", Method.Get);
+            var request = new RestRequest($"products/{id}", Method.Get);
             Product product = _client.Get<Product>(request);
             return product;
         }
         public List<Product> LimitResults(int limit)
         {
-            var request = new RestRequest($"api/Product?limit={limit}");
+            var request = new RestRequest($"products?limit={limit}");
             List<Product> limitList = _client.Get<List<Product>>(request);
             return limitList;
         }
         public List<Product> SortResults(string order)
         {
-            var request = new RestRequest($"api/Product?sort={order}");
+            var request = new RestRequest($"products?sort={order}");
             List<Product> orderList = _client.Get<List<Product>>(request);
             return orderList;
         }
         public List<string> GetAllCategories()
         {
-            var request = new RestRequest($"api/Product/Categories");
+            var request = new RestRequest($"products/categories");
             List<string> categories = _client.Get<List<string>>(request);
             return categories;
         }
@@ -57,7 +57,7 @@ namespace Business
         }
         public Product PostProudct(Product product)
         {
-            var request = new RestRequest("api/Product", Method.Post);
+            var request = new RestRequest("products", Method.Post);
             request.AddJsonBody(product);
             return _client.Post<Product>(request);
         }
@@ -67,7 +67,7 @@ namespace Business
         }
         public Product DeleteProduct(int id)
         {
-            var request = new RestRequest($"api/Product/{id}", Method.Delete);
+            var request = new RestRequest($"products/{id}", Method.Delete);
             var response = _client.Execute(request);
             return JsonSerializer.Deserialize<Product>(response.Content);
         }

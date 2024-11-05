@@ -1,6 +1,6 @@
 ﻿namespace APIConsume
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -38,6 +38,9 @@
             this.comboBox_categories = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnGetAll = new System.Windows.Forms.Button();
+            this.textBoxDelete = new System.Windows.Forms.TextBox();
+            this.BtnDelete = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBoxId = new System.Windows.Forms.TextBox();
             this.btnGetById = new System.Windows.Forms.Button();
@@ -48,8 +51,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.BtnDelete = new System.Windows.Forms.Button();
-            this.textBoxDelete = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsGrid)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -133,6 +134,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnGetAll);
             this.panel2.Controls.Add(this.textBoxDelete);
             this.panel2.Controls.Add(this.BtnDelete);
             this.panel2.Controls.Add(this.comboBox1);
@@ -148,10 +150,37 @@
             this.panel2.Size = new System.Drawing.Size(718, 61);
             this.panel2.TabIndex = 11;
             // 
+            // btnGetAll
+            // 
+            this.btnGetAll.Location = new System.Drawing.Point(25, 14);
+            this.btnGetAll.Name = "btnGetAll";
+            this.btnGetAll.Size = new System.Drawing.Size(66, 20);
+            this.btnGetAll.TabIndex = 11;
+            this.btnGetAll.Text = "Get All";
+            this.btnGetAll.UseVisualStyleBackColor = true;
+            this.btnGetAll.Click += new System.EventHandler(this.btnGetAll_Click);
+            // 
+            // textBoxDelete
+            // 
+            this.textBoxDelete.Location = new System.Drawing.Point(640, 12);
+            this.textBoxDelete.Name = "textBoxDelete";
+            this.textBoxDelete.Size = new System.Drawing.Size(45, 20);
+            this.textBoxDelete.TabIndex = 10;
+            // 
+            // BtnDelete
+            // 
+            this.BtnDelete.Location = new System.Drawing.Point(582, 10);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(52, 23);
+            this.BtnDelete.TabIndex = 9;
+            this.BtnDelete.Text = "Delete";
+            this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
+            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(490, 12);
+            this.comboBox1.Location = new System.Drawing.Point(506, 12);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(70, 21);
             this.comboBox1.TabIndex = 8;
@@ -159,16 +188,16 @@
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(168, 14);
+            this.textBoxId.Location = new System.Drawing.Point(184, 14);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(28, 20);
             this.textBoxId.TabIndex = 2;
             // 
             // btnGetById
             // 
-            this.btnGetById.Location = new System.Drawing.Point(81, 13);
+            this.btnGetById.Location = new System.Drawing.Point(97, 13);
             this.btnGetById.Name = "btnGetById";
-            this.btnGetById.Size = new System.Drawing.Size(81, 20);
+            this.btnGetById.Size = new System.Drawing.Size(81, 21);
             this.btnGetById.TabIndex = 3;
             this.btnGetById.Text = "Get by Id";
             this.btnGetById.UseVisualStyleBackColor = true;
@@ -176,19 +205,19 @@
             // 
             // btnOrder
             // 
-            this.btnOrder.Location = new System.Drawing.Point(409, 11);
+            this.btnOrder.Location = new System.Drawing.Point(425, 12);
             this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(75, 23);
+            this.btnOrder.Size = new System.Drawing.Size(75, 22);
             this.btnOrder.TabIndex = 7;
-            this.btnOrder.Text = "Descendent\r\n";
+            this.btnOrder.Text = "Descendent";
             this.btnOrder.UseVisualStyleBackColor = true;
             this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btnPost
             // 
-            this.btnPost.Location = new System.Drawing.Point(202, 13);
+            this.btnPost.Location = new System.Drawing.Point(218, 13);
             this.btnPost.Name = "btnPost";
-            this.btnPost.Size = new System.Drawing.Size(80, 20);
+            this.btnPost.Size = new System.Drawing.Size(80, 21);
             this.btnPost.TabIndex = 4;
             this.btnPost.Text = "Post Product";
             this.btnPost.UseVisualStyleBackColor = true;
@@ -196,16 +225,16 @@
             // 
             // textBoxLimit
             // 
-            this.textBoxLimit.Location = new System.Drawing.Point(373, 12);
+            this.textBoxLimit.Location = new System.Drawing.Point(388, 14);
             this.textBoxLimit.Name = "textBoxLimit";
             this.textBoxLimit.Size = new System.Drawing.Size(30, 20);
             this.textBoxLimit.TabIndex = 6;
             // 
             // btnLimit
             // 
-            this.btnLimit.Location = new System.Drawing.Point(288, 12);
+            this.btnLimit.Location = new System.Drawing.Point(304, 12);
             this.btnLimit.Name = "btnLimit";
-            this.btnLimit.Size = new System.Drawing.Size(78, 21);
+            this.btnLimit.Size = new System.Drawing.Size(78, 22);
             this.btnLimit.TabIndex = 5;
             this.btnLimit.Text = "Get with Limit";
             this.btnLimit.UseVisualStyleBackColor = true;
@@ -235,24 +264,7 @@
             this.panel4.Size = new System.Drawing.Size(658, 40);
             this.panel4.TabIndex = 0;
             // 
-            // BtnDelete
-            // 
-            this.BtnDelete.Location = new System.Drawing.Point(566, 10);
-            this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(52, 23);
-            this.BtnDelete.TabIndex = 9;
-            this.BtnDelete.Text = "Delete";
-            this.BtnDelete.UseVisualStyleBackColor = true;
-            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
-            // 
-            // textBoxDelete
-            // 
-            this.textBoxDelete.Location = new System.Drawing.Point(624, 12);
-            this.textBoxDelete.Name = "textBoxDelete";
-            this.textBoxDelete.Size = new System.Drawing.Size(45, 20);
-            this.textBoxDelete.TabIndex = 10;
-            // 
-            // Form1
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -262,8 +274,8 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormMain";
+            this.Text = "Fake Store";
             ((System.ComponentModel.ISupportInitialize)(this.ProductsGrid)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -296,6 +308,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBoxDelete;
         private System.Windows.Forms.Button BtnDelete;
+        private System.Windows.Forms.Button btnGetAll;
     }
 }
 
